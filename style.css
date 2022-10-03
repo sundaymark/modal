@@ -52,13 +52,13 @@ body{
     font-size: 2rem;
 }
 
-#close-btn:hover{
+#close-btn:hover {
     cursor: pointer;
     font-size: 3rem;
     color: red;
 }
 
-#modal-container{
+#modal-container {
     display: none;
     position: fixed;
     top: 0;
@@ -67,4 +67,16 @@ body{
     height: 100%;
     z-index: 1;
 
+}
+
+@keyframes animatemodal {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 50%;
+        opacity: 1;
+    }
 }
